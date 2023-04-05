@@ -1,0 +1,72 @@
+Mar 28 01:21:22 servere sshd[7362]: Accepted publickey for root from 192.168.0.162 port 43606 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 01:21:22 servere systemd[7368]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 01:21:23 servere sshd[7362]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 01:21:24 servere sshd[7362]: pam_unix(sshd:session): session closed for user root
+Mar 28 01:21:34 servere systemd[7374]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 01:21:49 servere sshd[7529]: Accepted publickey for root from 192.168.0.162 port 38650 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 01:21:50 servere systemd[7535]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 01:21:50 servere sshd[7529]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 01:21:51 servere sshd[7529]: pam_unix(sshd:session): session closed for user root
+Mar 28 01:22:01 servere systemd[7539]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 01:22:15 servere sshd[7692]: Accepted publickey for root from 192.168.0.162 port 55650 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 01:22:15 servere systemd[7698]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 01:22:15 servere sshd[7692]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 01:22:16 servere sshd[7692]: pam_unix(sshd:session): session closed for user root
+Mar 28 01:22:26 servere systemd[7702]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 12:50:02 servere sshd[8527]: Accepted publickey for root from 192.168.0.162 port 52326 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 12:50:02 servere systemd[8533]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 12:50:02 servere sshd[8527]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 12:50:35 servere groupadd[8868]: group added to /etc/group: name=mysql, GID=27
+Mar 28 12:50:35 servere groupadd[8868]: group added to /etc/gshadow: name=mysql
+Mar 28 12:50:36 servere groupadd[8868]: new group: name=mysql, GID=27
+Mar 28 12:50:36 servere useradd[8876]: new user: name=mysql, UID=27, GID=27, home=/var/lib/mysql, shell=/sbin/nologin
+Mar 28 12:51:03 servere sshd[8527]: pam_unix(sshd:session): session closed for user root
+Mar 28 12:51:14 servere systemd[8538]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:34:05 servere sshd[36511]: Accepted publickey for root from 192.168.0.162 port 56968 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:34:05 servere systemd[36518]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:34:06 servere sshd[36511]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:34:27 servere sshd[36511]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:34:37 servere sshd[37563]: Accepted publickey for root from 192.168.0.162 port 44572 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:34:37 servere sshd[37563]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:35:08 servere useradd[37621]: new group: name=apache, GID=1001
+Mar 28 14:35:08 servere useradd[37621]: new user: name=apache, UID=1001, GID=1001, home=/home/apache, shell=/bin/bash
+Mar 28 14:35:11 servere sshd[37563]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:35:21 servere systemd[36522]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:35:25 servere sshd[37636]: Accepted publickey for root from 192.168.0.162 port 47330 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:35:25 servere systemd[37643]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:35:25 servere sshd[37636]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:35:52 servere sshd[37636]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:36:02 servere systemd[37646]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:36:35 servere sshd[39814]: Accepted publickey for root from 192.168.0.162 port 46420 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:36:35 servere systemd[39822]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:36:35 servere sshd[39814]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:37:09 servere sshd[39814]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:37:19 servere systemd[39824]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:37:45 servere sshd[39866]: Accepted publickey for root from 192.168.0.162 port 49436 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:37:45 servere systemd[39873]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:37:45 servere sshd[39866]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:38:00 servere sshd[39866]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:38:10 servere systemd[39877]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:38:18 servere sshd[40398]: Accepted publickey for root from 192.168.0.162 port 51412 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:38:19 servere systemd[40404]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:38:19 servere sshd[40398]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:39:04 servere sshd[40398]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:39:14 servere systemd[40409]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:39:19 servere sshd[40459]: Accepted publickey for root from 192.168.0.162 port 43886 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:39:19 servere systemd[40466]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:39:19 servere sshd[40459]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:39:46 servere sshd[40459]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:39:56 servere systemd[40469]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:42:42 servere sshd[42756]: Accepted publickey for root from 192.168.0.162 port 39770 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:42:42 servere systemd[42763]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:42:42 servere sshd[42756]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:42:46 servere sshd[42756]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:42:56 servere systemd[42766]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:43:02 servere sshd[42806]: Accepted publickey for root from 192.168.0.162 port 44256 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:43:02 servere systemd[42813]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:43:03 servere sshd[42806]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 28 14:43:29 servere sshd[42806]: pam_unix(sshd:session): session closed for user root
+Mar 28 14:43:39 servere systemd[42816]: pam_unix(systemd-user:session): session closed for user root
+Mar 28 14:58:08 servere sshd[44884]: Accepted publickey for root from 192.168.0.162 port 56744 ssh2: RSA SHA256:cSGnKwZOgTrLmDl65Pul1BnynpQodsXuTA0pIV3h0iQ
+Mar 28 14:58:08 servere systemd[44891]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Mar 28 14:58:08 servere sshd[44884]: pam_unix(sshd:session): session opened for user root by (uid=0)

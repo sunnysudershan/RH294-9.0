@@ -1,0 +1,388 @@
+{
+    "plays": [
+        {
+            "__play_name": "Backup the system configuration",
+            "name": "Backup the system configuration",
+            "pattern": "servera.lab.example.com",
+            "play": "Backup the system configuration",
+            "play_pattern": "servera.lab.example.com",
+            "play_uuid": "46ea81f5-b3d4-ebad-ec10-000000000008",
+            "playbook": "/root/RH294-9.0/role-collections/bck.yml",
+            "playbook_uuid": "ecef3069-fffd-412b-aa3c-aa2d0d94df6e",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "4s",
+                    "__host": "servera.lab.example.com",
+                    "__number": 0,
+                    "__result": "Ok",
+                    "__task": "Ensure the machine is up",
+                    "__task_action": "gls.utils.newping",
+                    "duration": 4.307677,
+                    "end": "2023-04-05T05:39:08.074831",
+                    "event_loop": null,
+                    "host": "servera.lab.example.com",
+                    "play": "Backup the system configuration",
+                    "play_pattern": "servera.lab.example.com",
+                    "play_uuid": "46ea81f5-b3d4-ebad-ec10-000000000008",
+                    "playbook": "/root/RH294-9.0/role-collections/bck.yml",
+                    "playbook_uuid": "ecef3069-fffd-412b-aa3c-aa2d0d94df6e",
+                    "remote_addr": "servera.lab.example.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "ansible_facts": {
+                            "discovered_interpreter_python": "/usr/libexec/platform-python"
+                        },
+                        "changed": false,
+                        "invocation": {
+                            "module_args": {
+                                "data": "pong"
+                            }
+                        },
+                        "newping": "pong"
+                    },
+                    "resolved_action": "gls.utils.newping",
+                    "start": "2023-04-05T05:39:03.767154",
+                    "task": "Ensure the machine is up",
+                    "task_action": "gls.utils.newping",
+                    "task_args": "",
+                    "task_path": "/root/RH294-9.0/role-collections/bck.yml:8",
+                    "task_uuid": "46ea81f5-b3d4-ebad-ec10-00000000000a",
+                    "uuid": "b2356132-8c33-4e65-b555-c53721b96251"
+                },
+                {
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__host": "servera.lab.example.com",
+                    "__number": 1,
+                    "__result": "Ok",
+                    "__task": "Ensure configuration files are saved",
+                    "__task_action": "include_role",
+                    "duration": 0.012238,
+                    "end": "2023-04-05T05:39:08.094551",
+                    "event_loop": null,
+                    "host": "servera.lab.example.com",
+                    "play": "Backup the system configuration",
+                    "play_pattern": "servera.lab.example.com",
+                    "play_uuid": "46ea81f5-b3d4-ebad-ec10-000000000008",
+                    "playbook": "/root/RH294-9.0/role-collections/bck.yml",
+                    "playbook_uuid": "ecef3069-fffd-412b-aa3c-aa2d0d94df6e",
+                    "remote_addr": "servera.lab.example.com",
+                    "res": {
+                        "changed": false,
+                        "include_args": {
+                            "name": "gls.utils.backup"
+                        }
+                    },
+                    "resolved_action": null,
+                    "start": "2023-04-05T05:39:08.082313",
+                    "task": "Ensure configuration files are saved",
+                    "task_action": "include_role",
+                    "task_args": "",
+                    "task_path": "/root/RH294-9.0/role-collections/bck.yml:12",
+                    "task_uuid": "46ea81f5-b3d4-ebad-ec10-00000000000b",
+                    "uuid": "a70c074a-2eec-4200-86b1-40d84f51f595"
+                },
+                {
+                    "__changed": true,
+                    "__duration": "1s",
+                    "__host": "servera.lab.example.com",
+                    "__number": 2,
+                    "__result": "Ok",
+                    "__task": "Ensure the backup directory exists",
+                    "__task_action": "file",
+                    "duration": 1.475327,
+                    "end": "2023-04-05T05:39:09.593683",
+                    "event_loop": null,
+                    "host": "servera.lab.example.com",
+                    "play": "Backup the system configuration",
+                    "play_pattern": "servera.lab.example.com",
+                    "play_uuid": "46ea81f5-b3d4-ebad-ec10-000000000008",
+                    "playbook": "/root/RH294-9.0/role-collections/bck.yml",
+                    "playbook_uuid": "ecef3069-fffd-412b-aa3c-aa2d0d94df6e",
+                    "remote_addr": "servera.lab.example.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "changed": true,
+                        "diff": {
+                            "after": {
+                                "mode": "0700",
+                                "path": "/var/lib/backup",
+                                "state": "directory"
+                            },
+                            "before": {
+                                "mode": "0755",
+                                "path": "/var/lib/backup",
+                                "state": "absent"
+                            }
+                        },
+                        "gid": 0,
+                        "group": "root",
+                        "invocation": {
+                            "module_args": {
+                                "_diff_peek": null,
+                                "_original_basename": null,
+                                "access_time": null,
+                                "access_time_format": "%Y%m%d%H%M.%S",
+                                "attributes": null,
+                                "follow": true,
+                                "force": false,
+                                "group": "root",
+                                "mode": 448,
+                                "modification_time": null,
+                                "modification_time_format": "%Y%m%d%H%M.%S",
+                                "owner": "root",
+                                "path": "/var/lib/backup",
+                                "recurse": false,
+                                "selevel": null,
+                                "serole": null,
+                                "setype": null,
+                                "seuser": null,
+                                "src": null,
+                                "state": "directory",
+                                "unsafe_writes": false
+                            }
+                        },
+                        "mode": "0700",
+                        "owner": "root",
+                        "path": "/var/lib/backup",
+                        "secontext": "unconfined_u:object_r:var_lib_t:s0",
+                        "size": 6,
+                        "state": "directory",
+                        "uid": 0
+                    },
+                    "resolved_action": "ansible.builtin.file",
+                    "resolved_role": "gls.utils.backup",
+                    "role": "backup",
+                    "start": "2023-04-05T05:39:08.118356",
+                    "task": "Ensure the backup directory exists",
+                    "task_action": "file",
+                    "task_args": "",
+                    "task_path": "/root/RH294-9.0/role-collections/collections/ansible_collections/gls/utils/roles/backup/tasks/main.yml:2",
+                    "task_uuid": "46ea81f5-b3d4-ebad-ec10-000000000027",
+                    "uuid": "8b1b85c5-6c36-4508-bc14-79d3e38e5c61"
+                },
+                {
+                    "__changed": true,
+                    "__duration": "2s",
+                    "__host": "servera.lab.example.com",
+                    "__number": 3,
+                    "__result": "Ok",
+                    "__task": "Ensure the backup exists",
+                    "__task_action": "command",
+                    "duration": 1.557989,
+                    "end": "2023-04-05T05:39:11.160594",
+                    "event_loop": null,
+                    "host": "servera.lab.example.com",
+                    "play": "Backup the system configuration",
+                    "play_pattern": "servera.lab.example.com",
+                    "play_uuid": "46ea81f5-b3d4-ebad-ec10-000000000008",
+                    "playbook": "/root/RH294-9.0/role-collections/bck.yml",
+                    "playbook_uuid": "ecef3069-fffd-412b-aa3c-aa2d0d94df6e",
+                    "remote_addr": "servera.lab.example.com",
+                    "res": {
+                        "_ansible_no_log": null,
+                        "changed": true,
+                        "cmd": [
+                            "tar",
+                            "zcf",
+                            "/var/lib/backup/backup-backup_etc.tgz",
+                            "-C",
+                            "/",
+                            "--xattrs",
+                            "--exclude",
+                            "backup-*.tgz",
+                            "--ignore-failed-read",
+                            "/etc/sysconfig",
+                            "/etc/yum.repos.d"
+                        ],
+                        "delta": "0:00:00.122959",
+                        "end": "2023-04-05 11:09:11.040862",
+                        "invocation": {
+                            "module_args": {
+                                "_raw_params": "tar zcf /var/lib/backup/backup-backup_etc.tgz -C / --xattrs --exclude backup-*.tgz --ignore-failed-read /etc/sysconfig /etc/yum.repos.d",
+                                "_uses_shell": false,
+                                "argv": null,
+                                "chdir": null,
+                                "creates": "/var/lib/backup/backup-backup_etc.tgz",
+                                "executable": null,
+                                "removes": null,
+                                "stdin": null,
+                                "stdin_add_newline": true,
+                                "strip_empty_ends": true,
+                                "warn": false
+                            }
+                        },
+                        "msg": "",
+                        "rc": 0,
+                        "start": "2023-04-05 11:09:10.917903",
+                        "stderr": "tar: Removing leading `/' from member names\ntar: Removing leading `/' from hard link targets",
+                        "stderr_lines": [
+                            "tar: Removing leading `/' from member names",
+                            "tar: Removing leading `/' from hard link targets"
+                        ],
+                        "stdout": "",
+                        "stdout_lines": []
+                    },
+                    "resolved_action": "ansible.builtin.command",
+                    "resolved_role": "gls.utils.backup",
+                    "role": "backup",
+                    "start": "2023-04-05T05:39:09.602605",
+                    "task": "Ensure the backup exists",
+                    "task_action": "command",
+                    "task_args": "",
+                    "task_path": "/root/RH294-9.0/role-collections/collections/ansible_collections/gls/utils/roles/backup/tasks/main.yml:10",
+                    "task_uuid": "46ea81f5-b3d4-ebad-ec10-000000000028",
+                    "uuid": "b04fb412-1950-4fd8-a44e-ab85802de71a"
+                }
+            ],
+            "uuid": "46ea81f5-b3d4-ebad-ec10-000000000008"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/root/RH294-9.0/role-collections/inventory"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/root/RH294-9.0/role-collections/bck.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/root/RH294-9.0/role-collections"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/root/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "image": "registry.redhat.io/ansible-automation-platform-22/ee-supported-rhel8:latest",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/root/RH294-9.0/role-collections/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "stdout",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Command line",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Not set",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Command line",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "successful",
+    "status_color": 10,
+    "stdout": [
+        "",
+        "PLAY [Backup the system configuration] *****************************************",
+        "",
+        "TASK [Ensure the machine is up] ************************************************",
+        "\u001b[0;32mok: [servera.lab.example.com]\u001b[0m",
+        "",
+        "TASK [Ensure configuration files are saved] ************************************",
+        "",
+        "TASK [gls.utils.backup : Ensure the backup directory exists] *******************",
+        "\u001b[0;33mchanged: [servera.lab.example.com]\u001b[0m",
+        "",
+        "TASK [gls.utils.backup : Ensure the backup exists] *****************************",
+        "\u001b[0;33mchanged: [servera.lab.example.com]\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;33mservera.lab.example.com\u001b[0m    : \u001b[0;32mok=3   \u001b[0m \u001b[0;33mchanged=2   \u001b[0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

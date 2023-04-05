@@ -1,0 +1,13 @@
+[myself]
+controller.lab.example.com
+
+[intranetweb]
+servera.lab.example.com
+
+[internetweb]
+servere.lab.example.com
+
+[web:children]
+intranetweb
+internetweb
+

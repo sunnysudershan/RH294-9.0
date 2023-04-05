@@ -1,7 +1,0 @@
----
-# requirements.yml
-
-- src: git@controller.lab.example.com:root/bash_env
-  scm: git
-  version: main
-  name: root.bash_env

@@ -1,5 +1,0 @@
----
-backup_id: test
-backup_files:
-  - /etc
-...
